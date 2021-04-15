@@ -1,3 +1,6 @@
+import math
+
+
 def find_hypotenuse(a, b):
     """
     Find hypotenuse for triangle with sides 'a' and 'b'
