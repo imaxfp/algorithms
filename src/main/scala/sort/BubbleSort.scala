@@ -3,7 +3,7 @@ package sort
 /**
   * Created by Maxim.
   *
-  * Bubble Sort [Best: O(n), Worst:O(N^2)]
+  * Bubble Sort [Best: O(n),  Worst:O(N^2)]
   *
   * 1. Starting on the left, compare adjacent items and keep “bubbling” the larger one to the right
   * 2. N-1 right side after N+1 step

@@ -9,12 +9,12 @@ object MergeLists {
 
   /**
     * merge list algorithm.
-    * Each of list sorted from min to max
+    * Each of the lists sorted from min to max
     *
     * Example:
     * ListA = 1 2 4 6 100
     * ListB = 5
-    * ListRes = 1 2 4 5 6 100
+    * Res = 1 2 4 5 6 100
     *
     * @param a
     * @param b
@@ -28,6 +28,5 @@ object MergeLists {
     if (a.head < b.head) mergeList(a.tail, b, res ::: List(a.head)) else
     mergeList(a, b.tail, res ::: List(b.head))
   }
-
 
 }
