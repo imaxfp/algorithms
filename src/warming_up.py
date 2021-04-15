@@ -12,7 +12,7 @@ def find_hypotenuse(a, b):
     :param number:
     :return:
     """
-    return math.sqrt(a ** 2 + b ** 2)
+    return None
 
 
 def find_the_number_of_hundreds(number):
@@ -20,8 +20,7 @@ def find_the_number_of_hundreds(number):
     For example:
     1975 -> 9
     """
-
-    return [int(i) for i in str(number)][-3]
+    return None
 
 
 def sum_of_numbers(number):
@@ -29,12 +28,7 @@ def sum_of_numbers(number):
     For example:
     179 -> 17
     """
-    # return sum([int(i) for i in str(number)])
-    # return reduce(lambda a, b: a + b, [int(i) for i in str(number)])
-    tmp = 0
-    for i in [int(i) for i in str(number)]:
-        tmp += i
-    return tmp
+    return None
 
 
 def clock(minutes):
@@ -45,9 +39,7 @@ def clock(minutes):
     150 -> 2:30
     1441 -> 0:1
     """
-    if minutes == 0: return 0, 0
-    while minutes > 1440: minutes -= 1440
-    return int(minutes / 60), minutes % 60
+    return None
 
 
 def time_slot_difference(start_h, start_min, start_sec, end_h, end_min, end_sec):
@@ -57,9 +49,7 @@ def time_slot_difference(start_h, start_min, start_sec, end_h, end_min, end_sec)
     For example:
     1,1,1 and 2,2,2 -> 3661
     """
-    start_in_sec = (start_h * 60 * 60) + (start_min * 60) + start_sec
-    end_in_sec = (end_h * 60 * 60) + (end_min * 60) + end_sec
-    return end_in_sec - start_in_sec
+    return None
 
 
 def find_the_max(arr_numbers):
@@ -68,10 +58,7 @@ def find_the_max(arr_numbers):
     1,1,4,7 -> 7
     """
     # return max(arr_numbers)
-    max = 0
-    for i in arr_numbers:
-        if max < i: max = i
-    return max
+    return None
 
 
 def is_leap_year(year):
@@ -81,4 +68,4 @@ def is_leap_year(year):
     2007 -> FALSE
     2000 -> TRUE
     """
-    return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
+    return None
