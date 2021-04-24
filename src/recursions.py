@@ -3,15 +3,7 @@ def reverse_array_rec(arr):
     :param arr: 1,2,3,4,5
     :return: 5,4,3,2,1
     """
-
-    def swap(arr, first, last):
-        if first == last: return arr
-        tmp = arr[first]
-        arr[first] = arr[last]
-        arr[last] = tmp
-        return swap(arr, first + 1, last - 1)
-
-    return swap(arr, 0, len(arr) - 1)
+    return None
 
 
 def fibonacci_number(n):
@@ -27,8 +19,4 @@ def fibonacci_number(n):
     0, 1, 1, 2, 3, 5, 8, 13
     """
 
-    def fibonacci_number(previous, current, iteration, n):
-        if iteration == n: return current
-        return fibonacci_number(current, previous + current, iteration + 1, n)
-
-    return fibonacci_number(0, 1, 1, n)
+    return None

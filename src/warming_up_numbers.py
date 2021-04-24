@@ -1,7 +1,3 @@
-import math
-from functools import reduce
-
-
 def find_hypotenuse(a, b):
     """
     Find hypotenuse for triangle with sides 'a' and 'b'

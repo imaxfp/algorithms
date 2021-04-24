@@ -16,15 +16,7 @@ def rotate_the_array_to_the_right(nums, k):
     rotate 2 steps to the right: [6,7,1,2,3,4,5]
     rotate 3 steps to the right: [5,6,7,1,2,3,4]
     """
-    pivot_element = nums[k]
-    for i in range(0, k):
-        head = nums[i]
-        nums[i] = nums[k + 1]
-        nums[k] = head
-        k += 1
-    nums[len(nums) - 1] = pivot_element
-
-    return nums
+    return None
 
 
 def get_indexes_the_sum_of_two_numbers(nums, target):
@@ -36,10 +28,7 @@ def get_indexes_the_sum_of_two_numbers(nums, target):
     Output: [0,1]
     Output: Because nums[0] + nums[1] == 9, we return [0, 1].
     """
-    for i in range(0, len(nums) - 1):
-        for j in range(0, len(nums) - 1):
-            if nums[i] + nums[j] == target: return (i, j)
-    return 0
+    return None
 
 
 def two_sum_problem(nums, target):
@@ -51,9 +40,7 @@ def two_sum_problem(nums, target):
     Output: [0,1]
     Output: Because nums[0] + nums[1] == 9, we return [0, 1].
     """
-    for i in range(0, len(nums)):
-        for j in range(0, len(nums)):
-            if i != j and nums[i] + nums[j] == target: return [i, j]
+    return None
 
 
 def find_GCD__greatest_common_divisor(a, b):

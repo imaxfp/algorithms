@@ -1,6 +1,4 @@
-import math
 from functools import reduce
-
 from numpy import long
 
 
@@ -39,13 +37,7 @@ def list_of_squares(n):
     :param n: 15
     :return: 1,4,9
     """
-    l = list()
-    for i in range(1, n):
-        if i ** 2 < n:
-            l.append(i ** 2)
-        else:
-            break
-    return l
+    return None
 
 
 def minimal_divisor(n):
@@ -54,12 +46,7 @@ def minimal_divisor(n):
     :param n: 15
     :return: 3
     """
-    min_div = 0
-    for i in range(2, n):
-        if n % i == 0:
-            min_div = i
-            break
-    return min_div
+    return None
 
 
 def find_count_of_numbers_greater_then_index_number(arr, index):
@@ -69,32 +56,11 @@ def find_count_of_numbers_greater_then_index_number(arr, index):
     :param index: 0
     :return: 4
     """
-    c = 0
-    for i in range(index + 1, len(arr)):
-        if arr[i] > arr[index]:
-            c += 1
-        else:
-            break
-
-    return c
+    return None
 
 
 def reverse_array(r):
-    head = 0
-    tail = len(r) - 1
-    while head != tail:
-        t = r[head]
-        r[head] = r[tail]
-        r[tail] = t
-
-        head += 1
-        tail -= 1
-    # r.reverse()
-    # r = arr[::-1]
-    return r
-
-
-
+    return None
 
 
 def shift_array_to_right(array, pivot):
@@ -105,18 +71,8 @@ def shift_array_to_right(array, pivot):
     :param pivot: 6
     :return: 3 4 5 3 4 2
     """
-    while pivot != 0:
-        tmp = array[pivot - 1]
-        array[pivot - 1] = array[pivot]
-        array[pivot] = tmp
-        pivot -= 1
-        print(array)
-
-    return array
+    return None
 
 
 def find_max(nums):
-    m = 0
-    for i in nums:
-        if i > m: m = i
-    return m
+    return None
