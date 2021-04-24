@@ -1,6 +1,6 @@
 import unittest
 
-from src.warming_up import find_hypotenuse, find_the_number_of_hundreds, clock, time_slot_difference, \
+from src.warming_up_numbers import find_hypotenuse, find_the_number_of_hundreds, clock, time_slot_difference, \
     find_the_max, is_leap_year
 
 
