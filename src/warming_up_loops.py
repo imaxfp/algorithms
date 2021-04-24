@@ -77,3 +77,46 @@ def find_count_of_numbers_greater_then_index_number(arr, index):
             break
 
     return c
+
+
+def reverse_array(r):
+    head = 0
+    tail = len(r) - 1
+    while head != tail:
+        t = r[head]
+        r[head] = r[tail]
+        r[tail] = t
+
+        head += 1
+        tail -= 1
+    # r.reverse()
+    # r = arr[::-1]
+    return r
+
+
+
+
+
+def shift_array_to_right(array, pivot):
+    """
+    Restriction - additional array cannot be used
+    Example:
+    :param array: 4 5 3 4 2 3
+    :param pivot: 6
+    :return: 3 4 5 3 4 2
+    """
+    while pivot != 0:
+        tmp = array[pivot - 1]
+        array[pivot - 1] = array[pivot]
+        array[pivot] = tmp
+        pivot -= 1
+        print(array)
+
+    return array
+
+
+def find_max(nums):
+    m = 0
+    for i in nums:
+        if i > m: m = i
+    return m

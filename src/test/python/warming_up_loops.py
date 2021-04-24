@@ -1,6 +1,6 @@
 import unittest
 from src.warming_up_loops import even_numbers_range, factorial, divisors_of_a_number, list_of_squares, minimal_divisor, \
-    find_count_of_numbers_greater_then_index_number
+    find_count_of_numbers_greater_then_index_number, reverse_array, find_max
 
 
 class MyTestCase(unittest.TestCase):
@@ -28,6 +28,12 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(find_count_of_numbers_greater_then_index_number([1, 2, 3, 4, 5], 0), 4)
         self.assertEqual(find_count_of_numbers_greater_then_index_number([10, 2, 3, 4, 5], 0), 0)
         self.assertEqual(find_count_of_numbers_greater_then_index_number([3, 2, 3, 10, 1], 1), 2)
+
+    def test_reverse_array(self):
+        self.assertEqual(reverse_array([1, 2, 3, 4, 5]), [5, 4, 3, 2, 1])
+
+    def test_find_max(self):
+        self.assertEqual(find_max([1, 2, 3, 4, 7, 5]), 7)
 
 
 if __name__ == '__main__':
